@@ -1,0 +1,41 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+	var orientacao = true;
+
+	function bi(){
+		pincel.fillStyle = "MediumVioletRed";
+		pincel.fillRect(0, 0, 600, 160);
+
+		pincel.fillStyle = "DarkOrchid";
+		pincel.fillRect(0, 160, 600, 240);
+
+		pincel.fillStyle = "MediumBlue";
+		pincel.fillRect(0, 240, 600, 400);
+	}
+
+	function pan(){
+		pincel.fillStyle = "DeepPink";
+		pincel.fillRect(0, 0, 600, 133);
+
+		pincel.fillStyle = "Yellow";
+		pincel.fillRect(0, 133, 600, 266);
+
+		pincel.fillStyle = "DeepSkyBlue";
+		pincel.fillRect(0, 266, 600, 400);
+	}
+
+	function troca(){
+		if(orientacao){
+			bi();
+		} else {
+			pan();
+		}
+		orientacao = !orientacao;
+	}
+
+	setInterval(troca, 3000);
+
+  </script>

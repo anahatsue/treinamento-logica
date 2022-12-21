@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br>");
+
+	}
+
+	function mostrar(texto) {
+		document.write(texto);
+		pularLinha();
+	}
+
+	var time = prompt("Qual o nome do seu time?");
+	var vitorias = parseInt(prompt("Adicione o número de vitórias do " + time));
+	var empate = parseInt(prompt("Adicione o número de empates do " + time));
+	
+	var pontos = (vitorias * 3) + empate;
+
+	mostrar("O " + time + " tem " + pontos + " pontos.");
+
+	if(pontos > 28) {
+		mostrar("O " + time + " está melhor do que na última copa.")
+		}
+
+	if(pontos < 28) {
+		mostrar("O " + time + " está pior do que na última copa.")
+		}
+
+	if(pontos == 28) {
+		mostrar("O " + time + " está igual do que na última copa.")
+		}
+
+
+</script>

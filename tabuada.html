@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br>");
+
+	}
+
+	function mostrar(texto) {
+		document.write(texto);
+		pularLinha();
+	}
+
+	var multiplicador;
+	var numero = 7;
+
+	mostrar("A tabuada do " + numero + " é:" + "<hr>");
+
+//	while(multiplicador <= 10) {
+//		var operacao = numero * multiplicador;
+//		mostrar(numero + " x " + multiplicador + " = " + operacao);
+//		multiplicador ++;
+//	}
+
+	for(multiplicador = 1; multiplicador <= 10; multiplicador++){
+		var operacao = numero * multiplicador;
+		mostrar(numero + " x " + multiplicador + " = " + operacao);
+	}
+
+	for(var contador = 1; contador <= 10; contador++){
+		alert("Contador atual: " + contador);
+	}
+
+	var i = 0;
+
+	while(i < 10) {
+		alert("O resultado é: " + (2 * i));
+		i++;
+	}
+
+
+
+</script>

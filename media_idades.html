@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br>");
+
+	}
+
+	function mostrar(texto) {
+		document.write(texto);
+		pularLinha();
+	}
+
+	var numeroFamiliares = parseInt(prompt("Quantos familiares você tem?"));
+	var totalIdades = 0;
+	var i = 1;
+	while(i <= numeroFamiliares) {
+		var idades = parseInt(prompt("Qual idade do seu " + i + "º parente?"));
+		totalIdades = totalIdades + idades;
+		i++;
+	}
+
+	var mediaIdades = totalIdades / numeroFamiliares;
+
+	mostrar(mediaIdades);
+	mostrar("FIM.")
+
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+</script>
